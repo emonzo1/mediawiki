@@ -166,14 +166,13 @@
 		"phpunit:entrypoint": "@phpunit -c tests/phpunit/suite.xml"
 	},
 	"config": {
-		"optimize-autoloader": true,
-		"prepend-autoloader": false,
+		"platform": {
+		   "php": "7.4.28"
+		},
 		"allow-plugins": {
-			"composer/package-versions-deprecated": true,
-			"wikimedia/composer-merge-plugin": true,
-			"composer/installers": true
+			"wikimedia/composer-merge-plugin": true
 		}
-	},
+	 },
 	"extra": {
 		"merge-plugin": {
 			"include": [
